@@ -21,7 +21,7 @@ Installing modern Raspbererry Pi OS trixie on x64 PC or laptop.
 # Enabling The Raspberry Pi splashscreen on boot.
 1. To enable the Raspberry Pi splashscreen on boot you must first go to the default Raspberry Pi configuration script by typing the following command `sudo raspi-config`
 2. Once you are in the Raspberry Pi configuration menu navigate with your arrow keys to System Options>Splash Screen>
-3. It will then ask you if you'd like to enable the splash at boot, click "yes" and then "Ok".
+3. It will then ask you if you'd like to enable the splash Screen at boot, click "yes" and then "Ok".
 4. Now you should be back in the main menu, click the TAB key and then the RIGHT ARROW key and then the ENTER key to exit the Raspberry Pi configuration script.
 5. If it has not already asked you to reboot then type `sudo reboot`.
 6. Congradulations! You now have the full Raspberry Pi Trixie OS desktop experience!
