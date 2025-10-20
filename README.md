@@ -26,5 +26,5 @@ Installing modern Raspbererry Pi OS trixie on x64 PC or laptop.
 5. If it has not already asked you to reboot then type `sudo reboot`.
 6. Congradulations! You now have the full Raspberry Pi Trixie OS desktop experience!
 # Unresolved issues.
-You cannot choose which Wi-Fi network you want directly from the Raspberry Pi Desktop GUI. You must either use the Raspberry Pi configuration script or use the`networkctl` command from the termimal.
+You cannot choose which Wi-Fi network you want directly from the Raspberry Pi Desktop GUI. You must either use the Raspberry Pi configuration script or use the`networkctl` command from the terminal.
 (To use the `networkctl` command you must first enable the networkctl daemon by typing `sudo systemctl enable systemd-networkd.service` and then rebooting your computer.)
