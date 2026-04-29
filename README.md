@@ -13,9 +13,11 @@ Installing modern Raspbererry Pi OS trixie on x64 PC or laptop.
 4. Then navigate to `/etc/apt/preferences.d` by typing `cd /etc/apt/preferences.d/`.
 5. In the `preferences.d` directory type the following command `sudo nano rpi-repo`.
 6. In the nano text-editor type the following 3 lines
-`Package: *
+```
+Package: *
 Pin: origin archive.raspberrypi.org
-Pin-Priority: 100`
+Pin-Priority: 100
+```
 7. Then press CTRL+X, and when it prompts you if you want to save it press 'Y' for yes, and then press enter.
 8. when the previous steps has been completed update your computers repositories by typing `sudo apt update` (this will give you a message about ignoring some repositories and that some repositories don't have a GPG key, but ignore those errors), and if some packages need to be upgraded then type `sudo apt upgrade`.
 9. reboot your computer by typing `sudo reboot`
