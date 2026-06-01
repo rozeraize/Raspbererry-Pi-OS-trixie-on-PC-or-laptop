@@ -19,7 +19,7 @@ Pin: origin archive.raspberrypi.org
 Pin-Priority: 100
 ```
 7. Then press CTRL+X, and when it prompts you if you want to save it press 'Y' for yes, and then press enter.
-8. when the previous steps has been completed update your computers repositories by typing `sudo apt update` (this will give you a message about ignoring some repositories and that some repositories don't have a GPG key, but ignore those errors), and if some packages need to be upgraded then type `sudo apt upgrade`.
+8. when the previous steps has been completed update your computers repositories by typing `sudo apt update --allow-unauthenticated` (this will give you a message about ignoring some repositories and that some repositories don't have a GPG key, but ignore those errors), and if some packages need to be upgraded then type `sudo apt upgrade`.
 9. Then to install the Raspberry Pi repo keyrings type `sudo apt install raspberrypi-archive-keyring`
 10. reboot your computer by typing `sudo reboot`
 # Installing modern Raspberry Pi Wayland desktop.
