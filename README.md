@@ -9,7 +9,7 @@ Installing modern Raspbererry Pi OS trixie on x64 PC or laptop.
 # Installing Raspberry Pi OS Trixie repositories.
 1. After booting into Debian Trixie, navigate to the `/etc/apt/sources.list.d/` directory by typing the following command `cd etc/apt/sources.list.d/`
 2. In the `etc/apt/sources.list.d` directory create a text file called `raspios.list` by typing the following command `sudo touch raspios.list`
-3. Add the following line of text `deb [trusted=yes] http://archive.raspberrypi.org/debian/ trixie main` into the text file by typing the following command `sudo echo "deb [trusted=yes] http://archive.raspberrypi.org/debian/ trixie main" > raspios.list`
+3. Add the following line of text `deb [arch=amd64] http://archive.raspberrypi.org/debian/ trixie main` into the text file by typing the following command `sudo echo "deb [arch=amd64] http://archive.raspberrypi.org/debian/ trixie main" > raspios.list`
 4. Then navigate to `/etc/apt/preferences.d` by typing `cd /etc/apt/preferences.d/`.
 5. In the `preferences.d` directory type the following command `sudo nano rpi-repo`.
 6. In the nano text-editor type the following 3 lines
