@@ -10,18 +10,9 @@ Installing modern Raspbererry Pi OS trixie on x64 PC or laptop.
 1. After booting into Debian Trixie, navigate to the `/etc/apt/sources.list.d/` directory by typing the following command `cd etc/apt/sources.list.d/`
 2. In the `etc/apt/sources.list.d` directory create a text file called `raspios.list` by typing the following command `sudo touch raspios.list`
 3. Add the following line of text `deb [arch=amd64] http://archive.raspberrypi.org/debian/ trixie main` into the text file by typing the following command `sudo echo "deb [arch=amd64] http://archive.raspberrypi.org/debian/ trixie main" > raspios.list`
-4. Then navigate to `/etc/apt/preferences.d` by typing `cd /etc/apt/preferences.d/`.
-5. In the `preferences.d` directory type the following command `sudo nano rpi-repo`.
-6. In the nano text-editor type the following 3 lines
-```
-Package: *
-Pin: origin archive.raspberrypi.org
-Pin-Priority: 100
-```
-7. Then press CTRL+X, and when it prompts you if you want to save it press 'Y' for yes, and then press enter.
-8. when the previous steps has been completed update your computers repositories by typing `sudo apt update --allow-unauthenticated` (this will give you a message about ignoring some repositories and that some repositories don't have a GPG key, but ignore those errors), and if some packages need to be upgraded then type `sudo apt upgrade`.
-9. Then to install the Raspberry Pi repo keyrings type `sudo apt install --allow-unauthenticated raspberrypi-archive-keyring`
-10. reboot your computer by typing `sudo reboot`
+4. when the previous steps has been completed update your computers repositories by typing `sudo apt update --allow-unauthenticated` (this will give you a message about ignoring some repositories and that some repositories don't have a GPG key, but ignore those errors), and if some packages need to be upgraded then type `sudo apt upgrade`.
+5. Then to install the Raspberry Pi repo keyrings type `sudo apt install --allow-unauthenticated raspberrypi-archive-keyring`
+6. reboot your computer by typing `sudo reboot`
 # Installing modern Raspberry Pi Wayland desktop.
 1. To install the Raspberry Pi Wayland desktop type `sudo apt install rpd-wayland-all`
 2. Reboot your computer by typing `sudo reboot` and you should enter straight into the Raspberry Pi desktop login screen.
